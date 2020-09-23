@@ -6,22 +6,33 @@
     tools:context=".MainActivity"
     android:stretchColumns="0,3"
     android:gravity="center_vertical"
-    android:background="#66FF66"
+    android:background="#ffffff"
+    android:columnCount="1"
+    android:rowCount="7"
     >
 
-    <TableRow>
-        <TextView />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="模糊单词:"/>
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:text="模糊搜索:"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="#03A9F4"
+            android:textColor="#ffffff"
+            />
         <EditText
             android:id="@+id/searchWord"
+            android:paddingTop="20sp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="150dp"/>
-        <TextView />
-    </TableRow>
+
 
 
 

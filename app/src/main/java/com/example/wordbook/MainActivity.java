@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements WordListFragment.
     //删除对话框
     private void DeleteDialog(final String strId) {
         new AlertDialog.Builder(this).setTitle("删除单词")
-                .setMessage("是否真的删除单词?")
+                .setMessage("是否确定删除单词?（删除后无法找回）")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                        public void onClick(DialogInterface dialogInterface, int i) {

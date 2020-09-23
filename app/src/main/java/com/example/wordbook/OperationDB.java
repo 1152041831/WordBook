@@ -65,35 +65,28 @@ public class OperationDB {
             map.put(Words.Word.COLUMN_NAME_WORD, cursor.getString(cursor.getColumnIndex("word")));
             list.add(map);
         }
-
-
         return list;
     }
 
     public void InsertWord (String word, String meaning, String sample){
         String sql="insert into  words(word,meaning,sample) values(?,?,?)";
-
         SQLiteDatabase db = helper.getWritableDatabase();
         db.execSQL(sql,new String[]{word,meaning,sample});
     }
 
     public void Insert(String word, String meaning, String sample){
         String sql="insert into  words(word,meaning,sample) values(?,?,?)";
-
-        //Gets the data repository in write mode*/
         SQLiteDatabase db = helper.getWritableDatabase();
         db.execSQL(sql,new String[]{word,meaning,sample});
     }
 
     public void DeleteWord (String strID){
         String sql="delete from words where _id='"+strID+"'";
-
         SQLiteDatabase db = helper.getReadableDatabase();
         db.execSQL(sql);
     }
     public void Delete(String strID){
         String sql="delete from words where _id='"+strID+"'";
-
         SQLiteDatabase db = helper.getReadableDatabase();
         db.execSQL(sql);
     }
@@ -111,18 +104,14 @@ public class OperationDB {
     //查找
     public ArrayList<Map<String, String>> SearchUseSql(String strWordSearch) {
         SQLiteDatabase db = helper.getReadableDatabase();
-
         String sql="select * from words where word like ? order by word desc";
         Cursor c=db.rawQuery(sql,new String[]{"%"+strWordSearch+"%"});
-
         return ConvertCursorToWordList(c);
     }
     public ArrayList<Map<String, String>> Search(String strWordSearch) {
         SQLiteDatabase db = helper.getReadableDatabase();
-
         String sql="select * from words where word like ? order by word desc";
         Cursor c=db.rawQuery(sql,new String[]{"%"+strWordSearch+"%"});
-
         return ConvertCursorToWordList(c);
     }
 
