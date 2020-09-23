@@ -1,0 +1,86 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="0,3"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    android:columnCount="1"
+    android:rowCount="7"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="3"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="请输入单词信息："
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="单词:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"/>
+
+    <EditText
+        android:id="@+id/txtWord"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="3"
+        android:minWidth="150dp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="含义:"
+            android:textSize="20dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtMeaning"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
+            android:minWidth="150dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="例子:"
+            android:textSize="20dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtSample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="3"
+            android:minWidth="150dp"/>
+
+
+</TableLayout>
