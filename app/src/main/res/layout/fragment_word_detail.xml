@@ -13,11 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="单词："
-            android:textSize="50dp"
+            android:textSize="30sp"
             />
         <TextView
             android:id="@+id/word"
-            android:textSize="40dp"
+            android:textSize="30sp"
             android:textColor="#03A9F4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,11 +29,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="含义："
-            android:textSize="50dp"
+            android:textSize="30sp"
             />
         <TextView
             android:id="@+id/wordmeaning"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -44,11 +44,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="例句："
-            android:textSize="50dp"
+            android:textSize="30sp"
             />
         <TextView
             android:id="@+id/wordsample"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

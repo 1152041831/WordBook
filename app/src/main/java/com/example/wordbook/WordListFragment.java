@@ -106,7 +106,7 @@ public class WordListFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-    //为列表注册上下文菜单
+    //为列表注册上下文菜单
         ListView mListView = (ListView) view.findViewById(android.R.id.list);
         mListView.setOnCreateContextMenuListener(this);
         registerForContextMenu(mListView);
